@@ -1,0 +1,60 @@
+:root {
+  --color-dark-cyan: rgb(14,135,132);
+  --color-light-cyan: rgb(102,210,207);
+  --coror-dark-grey: rgb(51,61,75);
+  --color-pale-orange: rgb(253,214,186);
+  --color-light-cream-bg: rgb(254,252,247);
+  --color-grey: rgb(131,136,143);
+
+  --font-size-title-big: 13rem;
+  --font-size-heading-1: 7.2rem;
+  --font-size-heading-2: 4.8rem;
+  --font-size-heading-3: 3.6rem;
+  --font-size-heading-4: 3.2rem;
+  --font-size-body: 1.6rem;
+  --font-size-nav-menu: 1.2rem;
+
+  --line-height-heading-1: 7.2rem;
+  --line-heigth-heading-2: 4.8rem;
+  --line-height-heading-3: 3.6rem;
+  --line-height-heading-4: 3.2rem;
+  --line-height-body: 2.6rem;
+  --line-height-nav-menu: 1.5rem;
+}
+
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 67.5%;
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--color-light-cream-bg);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 2rem;
+}
+
+section {
+  position: relative;
+  margin: 12rem 0;
+}
+
+a {
+  color: var(--color-grey);
+  cursor: pointer;
+  text-decoration: none;
+}
