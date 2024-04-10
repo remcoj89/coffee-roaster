@@ -1,0 +1,58 @@
+.flexContainer {
+  text-align: center;
+}
+.commitmentImage {
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.commitmentTitle {
+  color: var(--color-dark-grey);
+  font-size: var(--font-size-heading-4);
+  font-weight: bold;
+  margin: 3.2rem 0;
+}
+
+@media(min-width: 650px) {
+  .flexContainer {
+    align-items: center;
+    display: flex;
+    gap: 5.7rem;
+    text-align: left;
+  }
+
+  .commitmentImage {
+    min-height: 55rem;
+    width: 50%;
+  }
+
+  .commitment {
+    width: 50%;
+  }
+
+  .commitmentTitle {
+    color: var(--color-dark-grey);
+    font-size: var(--font-size-heading-4);
+    font-weight: bold;
+    margin: 0 0 3.2rem 0;
+  }
+}
+
+
+
+@media(min-width: 950px) {
+  .flexContainer {
+    gap: 12.5rem;
+    padding: 0 8.5rem;
+  }
+
+
+  .commitmentTitle {
+    color: var(--color-dark-grey);
+    font-size: var(--font-size-heading-3);
+    font-weight: bold;
+    margin-bottom: 3.2rem;
+  }
+}

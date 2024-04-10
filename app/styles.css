@@ -58,7 +58,12 @@ section {
 a {
   color: var(--color-grey);
   cursor: pointer;
+  line-height: var(--line-height-body);
   text-decoration: none;
+}
+
+p {
+  line-height: var(--line-height-body);
 }
 
 @media(min-width: 650px) {
