@@ -14,9 +14,8 @@ const fraunces = Fraunces({
   return (
     <Link
       href={link}
-      className={`${Styles.btn} ${Styles.btnDefault }`}
+      className={`${Styles.btn} ${Styles.btnDefault } ${fraunces.className}`}
       disabled={disabled}
-      style={{ fontFamily: fraunces.className}}
     >{children}</Link>
   )
 }

@@ -1,8 +1,7 @@
 'use client';
 
 import React, {useState} from 'react';
-import Image from 'next/image';
-import Logo from '@/public/images/shared/desktop/logo.svg';
+import Logo from '../../icons/logo.component';
 import Styles from './navbar.module.css';
 import Link from 'next/link';
 import IconBurgerMenu from '../../icons/icon-burgermenu';
@@ -16,11 +15,11 @@ const Navbar = () => {
   }
 
   return (
-    <>
+  <>
     <nav className={Styles.navbar}>
       <div className="container">
         <div className={Styles.navContainer}>
-          <Link href="/"><Image src={Logo} alt="" /></Link>
+          <Link href="/"><Logo fill='#333D4B'/></ Link>
           <ul className={Styles.navlinks}>
             <li className={Styles.navlink} ><Link href="/">home</Link></li>
             <li className={Styles.navlink} ><Link href="/about">about us</Link></li>
@@ -37,7 +36,7 @@ const Navbar = () => {
         <li className={Styles.navlink}><Link href="/about">about us</Link></li>
         <li className={Styles.navlink}><Link href="/plan">create your plan</Link></li>
     </div>
-    </>
+  </>
   )
 }
 

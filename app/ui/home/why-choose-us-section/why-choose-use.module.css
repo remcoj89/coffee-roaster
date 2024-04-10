@@ -1,0 +1,131 @@
+
+#chooseUsSection {
+  margin-bottom: 43.5em;
+}
+
+
+.whyChooseUs {
+  color: white;
+  position: relative;
+}
+
+.whyChooseUsHero {
+  background-color: var(--color-dark-grey);
+  border-radius: 10px;
+  padding: 5.6rem 2.4rem 66.1rem;
+  text-align: center;
+}
+
+.whyChooseUsHero > h2 {
+  font-size: var(--font-size-heading-5);
+  font-weight: 700;
+  line-height: var(--line-height-heading-5);
+  margin-bottom: 2.4rem;
+}
+
+/* why choose us grid */
+.whyChooseUsGrid {
+  display: grid;
+  position: absolute;
+  gap: 2.4rem;
+  top: 35rem;
+  left: 0;
+  right: 0
+}
+
+.whyChooseUsGridItem {
+  background-color: var(--color-dark-cyan);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 7.2rem 2.1rem 5.1rem;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.gridTextBlock {
+  margin-top: 5.6rem;
+}
+.gridTextBlock h3 {
+  font-weight: 700;
+}
+
+@media(min-width: 650px) {
+
+  #chooseUsSection {
+    margin-bottom: 35.5em;
+  }
+
+  .whyChooseUsHero {
+    padding: 5.6rem 2.4rem 37rem;
+  }
+
+  .whyChooseUsHero > h2 {
+    font-size: var(--font-size-heading-4);
+    line-height: var(--line-height-heading-4);
+  }
+
+  /* why choose us grid */
+  .whyChooseUsGrid {
+    top: 27.5rem;
+  }
+
+  .whyChooseUsGridItem {
+    flex-direction: row;
+    gap: 5.5rem;
+    justify-content: center;
+    text-align: left;
+    padding: 4.1rem 7rem;
+  }
+
+  .gridTextBlock {
+    margin-top: 0rem;
+  }
+
+  .gridTextBlock h3{
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media(min-width: 950px) {
+
+  #chooseUsSection {
+    margin-bottom: 30rem;
+  }
+  .whyChooseUsHero {
+    padding: 10rem 25% 31.7rem;
+  }
+
+  .whyChooseUsHero > h2 {
+    font-size: var(--font-size-heading-3);
+    line-height: var(--line-height-heading-3);
+  }
+
+  /* why choose us grid */
+  .whyChooseUsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    top: 34.5rem;
+    width: 90%;
+  }
+
+  .whyChooseUsGridItem {
+    flex-direction: column;
+    gap: 5.5rem;
+    justify-content: space-between;
+    text-align: center;
+    padding: 4.1rem 7rem;
+    width: 100%;
+  }
+
+  .gridTextBlock {
+    margin-top: 0rem;
+  }
+
+  .gridTextBlock h3{
+    margin-bottom: 1.6rem;
+  }
+}

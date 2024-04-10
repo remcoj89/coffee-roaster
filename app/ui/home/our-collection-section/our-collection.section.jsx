@@ -17,12 +17,9 @@ export default function ourCollectionSection() {
   return (
     <section>
       {/* Background */}
-      <span
-      className={Styles.sectionBackground}
-      style={{ fontFamily: fraunces.className}}
-      >our collection</span>
-      {/* collection grid */}
+      <span className={`${Styles.sectionBackground} ${fraunces.className}`}>our collection</span>
 
+      {/* collection grid */}
       <div className={Styles.ourCollectionGrid}>
         <div className={Styles.ourCollectionGridItem}>
           <Image
@@ -31,7 +28,7 @@ export default function ourCollectionSection() {
           className={Styles.ourCollectionGridItemImage}
           />
           <div className={Styles.ourCollectionGridItemContent}>
-            <h2 style={{ fontFamily: fraunces.className}}>Gran Espresso</h2>
+            <h2 className={fraunces.className}>Gran Espresso</h2>
             <p>Light and flavorful blend with cocoa and black pepper for an intense experience</p>
           </div>
         </div>
@@ -42,7 +39,7 @@ export default function ourCollectionSection() {
           className={Styles.ourCollectionGridItemImage}
           />
           <div className={Styles.ourCollectionGridItemContent}>
-            <h2 style={{ fontFamily: fraunces.className}}>Planalto</h2>
+            <h2 className={fraunces.className}>Planalto</h2>
             <p>Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
           </div>
         </div>
@@ -54,7 +51,7 @@ export default function ourCollectionSection() {
           className={Styles.ourCollectionGridItemImage}
           />
           <div className={Styles.ourCollectionGridItemContent}>
-            <h2 style={{ fontFamily: fraunces.className}}>Piccollo</h2>
+            <h2 className={fraunces.className}>Piccollo</h2>
             <p>Mild and smooth blend featuring notes of toasted almond and dried cherry </p>
           </div>
         </div>
@@ -65,7 +62,7 @@ export default function ourCollectionSection() {
           className={Styles.ourCollectionGridItemImage}
           />
           <div className={Styles.ourCollectionGridItemContent}>
-            <h2 style={{ fontFamily: fraunces.className}}>Danche</h2>
+            <h2 className={fraunces.className}>Danche</h2>
             <p>Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
           </div>
         </div>
