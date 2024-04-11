@@ -1,8 +1,11 @@
+// Hooks
+import Image from 'next/image';
+
 // Styling
 import {Fraunces } from "next/font/google";
 import Styles from './our-commitment.module.css';
-import Image from 'next/image';
 import CommitmentImage from '@/public/images/about/desktop/image-commitment.jpg';
+
 
 const fraunces = Fraunces({
   subsets: ["latin"],

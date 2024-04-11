@@ -6,6 +6,8 @@ import BackgroundImage from '@/public/images/about/desktop/image-hero-whitecup.j
 import Navbar from '../ui/shared/navbar/navbar.component.jsx';
 import Header from '../ui/shared/hero/hero.component.jsx';
 import OurCommitmentSection from "../ui/about/our-commitment-section/our-commitment.section";
+import QualitySection from "../ui/about/quality-section/qualitySection.component.jsx";
+import HqSection from "../ui/about/hq-section/hqSection.component.jsx";
 import Footer from '../ui/shared/footer/footer.component.jsx';
 
 
@@ -27,6 +29,8 @@ export default function About() {
       </Header>
       <main className="container">
         <OurCommitmentSection />
+        <QualitySection />
+        <HqSection />
       </main>
       <Footer />
     </>

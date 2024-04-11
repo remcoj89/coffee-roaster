@@ -35,7 +35,7 @@
 
 .whyChooseUsGridItem {
   background-color: var(--color-dark-cyan);
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
   justify-content: center;
