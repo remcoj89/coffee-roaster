@@ -1,0 +1,13 @@
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainContainer {
+  max-width: 74rem;
+}
+
+.mainContainer > a{
+  margin-top: 4rem;
+  float: right
+}

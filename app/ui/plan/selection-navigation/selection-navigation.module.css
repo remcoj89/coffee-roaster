@@ -1,0 +1,38 @@
+.selectionNavMenu {
+  width: 30%;
+}
+
+.selectionNavList {
+  color: var(--color-grey);
+  list-style: none;
+  font-weight: 700;
+}
+
+.selectionNavListItem {
+  padding: 2.4rem 0;
+}
+
+.selectionNavListItem:not(:last-child) {
+  border-bottom: solid 1px var(--color-grey);
+}
+
+.listItemActive {
+  color: var(--color-dark-grey)
+}
+
+.listItemDeActivated {
+  opacity: 0.4;
+}
+
+.listNumber {
+  margin-right: 2.4rem;
+  opacity: 0.7;
+}
+
+.listNumberSelected {
+  color: var(--color-light-cyan)
+}
+
+.listNumberActive {
+  opacity: 1;
+}

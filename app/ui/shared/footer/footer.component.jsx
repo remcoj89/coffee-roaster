@@ -9,7 +9,7 @@ import IconTwitter from '@/public/images/shared/desktop/icon-twitter.svg';
 export default function Footer() {
   return (
     <footer className={`container ${Styles.footer}`}>
-        <Link href='/'><Logo fill="#ffff"/></Link>
+        <Link href='/'><Logo color="#ffff"/></Link>
       <div className={Styles.navLinks}>
         <Link className={Styles.navLink} href="/">home</Link>
         <Link className={Styles.navLink} href="/about">about us</Link>

@@ -1,0 +1,26 @@
+
+.orderSummary {
+  background-color: var(--color-dark-grey);
+  border-radius: 10px;
+  color: var(--color-light-cream-bg);
+  padding: 4.7rem 6.4rem;
+  font-size: var(--font-size-heading-5);
+  font-weight: bold;
+}
+
+.orderSummary > p {
+  line-height: var(--line-height-heading-3);
+  margin-top: 0.8rem;
+}
+
+.title {
+  color: var(--color-grey);
+  font-size: var(--font-size-body);
+  font-weight: 300;
+  line-height: var(--line-heigth-body);
+  text-transform: uppercase;
+}
+
+.orderInput {
+  color: var(--color-dark-cyan);
+}

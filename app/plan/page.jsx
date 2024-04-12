@@ -5,6 +5,8 @@ import BackgroundImage from '@/public/images/plan/desktop/image-hero-blackcup.jp
 // Components
 import Navbar from '../ui/shared/navbar/navbar.component.jsx';
 import Header from '../ui/shared/hero/hero.component.jsx';
+import HowItWorksSection from "../ui/shared/sections/how-it-works-section/how-it-works-section";
+import ProductSelectionComponent from "../ui/plan/secelection-section/product-selection.component";
 import Footer from '../ui/shared/footer/footer.component.jsx';
 
 const fraunces = Fraunces({
@@ -24,7 +26,10 @@ export default function page() {
           <span className={Styles.headerMessage}>Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.</span>
         </div>
       </Header>
-      <main className='container'>Select plan</main>
+      <main className='container'>
+        <HowItWorksSection bgColor={'var(--color-dark-grey)'} />
+        <ProductSelectionComponent />
+      </main>
       <Footer />
     </>
   )

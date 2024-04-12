@@ -11,10 +11,17 @@ const fraunces = Fraunces({
 
  const Button = ({children, disabled, link }) => {
 
+  const buttonStyle = () => {
+    return disabled ? Styles.btnDisabled : Styles.btnDefault
+  }
+
+
+
   return (
+
     <Link
       href={link}
-      className={`${Styles.btn} ${Styles.btnDefault } ${fraunces.className}`}
+      className={`${Styles.btn} ${buttonStyle(disabled)} ${fraunces.className}`}
       disabled={disabled}
     >{children}</Link>
   )

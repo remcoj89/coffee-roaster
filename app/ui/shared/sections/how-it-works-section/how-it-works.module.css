@@ -1,4 +1,5 @@
 .howItWorks {
+ padding: 8 rem 2.4rem;
  text-align: center;
 }
 
@@ -22,6 +23,7 @@
 
 .howItWorksGridItem h4{
   color: var(--color-dark-grey);
+  line-height: var(--line-height-heading-3 );
   margin: 4rem 0;
 }
 
@@ -35,6 +37,7 @@
 @media(min-width: 650px) {
 
   .howItWorks {
+    padding: 10rem 4rem;
     text-align: left;
    }
 
@@ -45,6 +48,9 @@
     margin-bottom: 4.4rem;
   }
 
+  .howItWorksGridItem > h4 {
+    padding-right :  20%;
+  }
 
     .separationLine {
       align-items: center;
@@ -75,4 +81,8 @@
 }
 
 @media(min-width: 950px) {
+  .howItWorks {
+    padding: 10rem 7.4rem;
+    text-align: left;
+   }
 }
