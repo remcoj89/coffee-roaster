@@ -6,8 +6,7 @@ import Styles from './product-selection.module.css';
 
 // Components
 import SelectionNavigation from '../selection-navigation/selection-navigation.component';
-import OrderSummary from '../order-summary/order-summary.component.client';
-import Button from '../../shared/button/button.component';
+import SelectionForm from '../selection-form/selection-form.component';
 
 export default function productSelectionComponent() {
   return (
@@ -15,8 +14,7 @@ export default function productSelectionComponent() {
       <div className={Styles.flexContainer}>
         <SelectionNavigation />
         <div className={Styles.mainContainer}>
-          <OrderSummary />
-          <Button link={"#"} disabled={true}>Create my plan!</Button>
+          <SelectionForm />
         </div>
       </div>
     </section>

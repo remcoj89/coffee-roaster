@@ -1,6 +1,7 @@
 'use client';
 
-import React, {useState} from 'react';
+import React, {useContext} from 'react';
+import { NavContext } from '@/app/_lib/providers/nav-provider';
 import Logo from '../../icons/logo.component';
 import Styles from './navbar.module.css';
 import Link from 'next/link';
@@ -8,10 +9,10 @@ import IconBurgerMenu from '../../icons/icon-burgermenu';
 import IconClose from '../../icons/icon-close';
 
 const Navbar = () => {
-  const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
-
+  const { isMenuOpen, setIsMenuOpen } = useContext(NavContext);
+  
   const toggleNavMenu = () => {
-    setIsNavMenuOpen(!isNavMenuOpen)
+    setIsMenuOpen(!isMenuOpen)
   }
 
   return (
@@ -26,12 +27,12 @@ const Navbar = () => {
             <li className={Styles.navlink} ><Link href="/plan">create your plan</Link></li>
           </ul>
           <div className={Styles.mobileNav} onClick={toggleNavMenu}>
-            {isNavMenuOpen ? <IconClose />:<IconBurgerMenu />}
+            {isMenuOpen ? <IconClose />:<IconBurgerMenu />}
           </div>
         </div>
       </div>
     </nav>
-    <div className={Styles.mobileNavMenu} style={{ display: isNavMenuOpen? 'block' : 'none' }}>
+    <div className={Styles.mobileNavMenu} style={{ display: isMenuOpen? 'block' : 'none' }}>
         <li className={Styles.navlink}><Link href="/">home</Link></li>
         <li className={Styles.navlink}><Link href="/about">about us</Link></li>
         <li className={Styles.navlink}><Link href="/plan">create your plan</Link></li>

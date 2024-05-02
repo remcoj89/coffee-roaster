@@ -2,10 +2,10 @@
 
 // Hooks
 import React from 'react';
+import {Fraunces } from "next/font/google";
 
 // Styles
 import Styles from './order-summary.module.css';
-import {Fraunces } from "next/font/google";
 
 const fraunces = Fraunces({
   subsets: ["latin"],

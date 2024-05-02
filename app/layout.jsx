@@ -1,4 +1,8 @@
+// Hooks
 import { Barlow } from "next/font/google";
+import { NavProvider } from "./_lib/providers/nav-provider";
+
+// Styling
 import "./reset.css";
 import "./styles.css";
 
@@ -17,7 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={barlow.className} >{children}</body>
+      <NavProvider >
+        <body className={barlow.className} >{children}</body>
+      </NavProvider>
     </html>
   );
 }

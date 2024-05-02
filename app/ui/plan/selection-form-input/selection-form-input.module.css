@@ -1,0 +1,56 @@
+.formField {
+  color: var(--color-grey);
+  width: 100%;
+}
+
+.fieldLabel  {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: var(--font-size-heading-4);
+  font-weight: bold;
+  justify-content: space-between;
+  line-height: var(--line-height-heading-4);
+  margin-bottom: 5.6rem;
+  width: 100%;
+}
+
+.iconArrow {
+  transition: 1s ease-in-out;
+}
+
+.inputfield {
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.optionsCard {
+  background-color: var(--color-bg-card);
+  border-radius: var(--border-radius );
+  color: var(--color-dark-grey);
+  cursor: pointer;
+  font-size: var(--font-size-heading-5 );
+  font-weight: bold;
+  margin-bottom: 5.6rem;
+  margin-right: auto;
+  padding: 3.2rem 2.8rem;
+  width: 30%;
+}
+
+.active {
+  background-color: var(--color-dark-cyan);
+}
+
+.optionsCard &:last-child {
+  margin-right: 0;
+}
+
+
+.optionsCard > p {
+  font-size: var(--font-size-body);
+  font-weight: 400;
+}
+
+.optionsCard > input {
+  visibility: hidden;
+}
