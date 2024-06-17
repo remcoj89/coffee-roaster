@@ -1,7 +1,7 @@
 'use client';
 
 import React, {useContext} from 'react';
-import { NavContext } from '@/app/_lib/providers/nav-provider';
+import { NavContext } from '@/app/_lib/providers/nav.provider';
 import Logo from '../../icons/logo.component';
 import Styles from './navbar.module.css';
 import Link from 'next/link';
@@ -10,7 +10,7 @@ import IconClose from '../../icons/icon-close';
 
 const Navbar = () => {
   const { isMenuOpen, setIsMenuOpen } = useContext(NavContext);
-  
+
   const toggleNavMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }

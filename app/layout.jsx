@@ -1,16 +1,12 @@
 // Hooks
-import { Barlow } from "next/font/google";
-import { NavProvider } from "./_lib/providers/nav-provider";
+import { NavProvider } from "./_lib/providers/nav.provider";
+import { SelectedPlanProvider } from "./_lib/providers/selection-plan.provider";
+import { ModalProvider } from "./_lib/providers/modal.provider";
 
 // Styling
+import { barlow } from "./utils/fonts";
 import "./reset.css";
 import "./styles.css";
-
-const barlow = Barlow({
-   display: 'swap',
-   subsets: ["latin"],
-   weight: [ '300', '700'],
-  });
 
 
 export const metadata = {
@@ -20,10 +16,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <NavProvider >
-        <body className={barlow.className} >{children}</body>
-      </NavProvider>
-    </html>
+    <NavProvider>
+      <ModalProvider>
+        <SelectedPlanProvider>
+          <html lang="en">
+            <body className={barlow.className} >{children}</body>
+          </html>
+        </SelectedPlanProvider>
+      </ModalProvider>
+    </NavProvider>
   );
 }

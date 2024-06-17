@@ -1,29 +1,38 @@
-import React from 'react';
-import Link from 'next/link'
+import React, {useContext} from 'react';
 import Styles from './button.module.css';
-import {Fraunces } from "next/font/google";
+import {fraunces } from "../../../utils/fonts";
+import { ModalContext } from '@/app/_lib/providers/modal.provider';
 
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  weight: [ '700'],
-  display: 'swap',
- })
 
- const Button = ({children, disabled, link }) => {
+ const BUTTON_TYPE_CLASSES = {
+  heroButton: 'hero',
+  submitButton: "submit",
+  modalButton: "modal",
+  disabledButton: "disabled"
+};
+
+ const Button = ({children, disabled, link, buttonType}) => {
+  const {setIsModalOpen } = useContext(ModalContext);
 
   const buttonStyle = () => {
     return disabled ? Styles.btnDisabled : Styles.btnDefault
   }
 
-
+  const handleClick = () => {
+    if(buttonType === 'modal'){
+      setIsModalOpen(false);
+    }
+  }
 
   return (
 
-    <Link
-      href={link}
-      className={`${Styles.btn} ${buttonStyle(disabled)} ${fraunces.className}`}
-      disabled={disabled}
-    >{children}</Link>
+    <button
+    className={`${Styles.btn} ${Styles.btnDefault} ${fraunces.className}`}
+    disabled={disabled}
+    type={BUTTON_TYPE_CLASSES[buttonType]}
+    onClick={handleClick}
+
+    >{children}</button>
   )
 }
 

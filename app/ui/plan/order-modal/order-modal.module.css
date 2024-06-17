@@ -1,0 +1,67 @@
+.orderModal {
+  align-items: center;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  opacity:1;
+  overflow: hidden;
+  position: fixed;
+  transition: opacity .2s ease;
+  z-index: 10;
+}
+
+.closeBtn {
+  background-color: rgba(255, 255, 255, 0.637);
+  border-radius: 15px;
+  padding: 1rem;
+  position: absolute;
+  right:15%;
+  top:15%;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  background-color: rgba(255, 255, 255);
+}
+
+.orderModalCard {
+  background-color: var(--color-bg-card);
+  color: var(--color-grey);
+  max-width: 54rem;
+}
+
+.orderModalHeader {
+  background: var(--color-dark-grey);
+  color: var(--color-bg-card);
+  padding-block: 4.8rem 4rem;
+  padding-inline: 5.6rem;
+}
+
+.orderModalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding-block: 4.8rem;
+  padding-inline: 5.6rem;
+}
+
+.blockQuote {
+  font-weight: bold;
+}
+
+.blockQuote > .highLightedText {
+
+  color: var(--color-dark-cyan)
+}
+
+.checkout {
+  align-items: center;
+  color: var(--color-dark-grey);
+  display: flex;
+  font-weight: 700;
+  gap: 1.8rem;
+  justify-content: center;
+  padding-top: 3rem;
+  text-align: center;
+}

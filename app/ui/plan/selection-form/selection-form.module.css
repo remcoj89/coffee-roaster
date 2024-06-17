@@ -1,4 +1,12 @@
 .form {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4rem;
+  position: relative;
 }
 
+.submitBtnWrapper {
+  display: inline;
+  margin-left: auto;
+}

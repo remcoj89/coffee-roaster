@@ -1,5 +1,5 @@
 // Styling
-import {Fraunces } from "next/font/google";
+import { fraunces } from './utils/fonts';
 import Styles from './ui/shared/hero/hero.module.css';
 import backgroundImage from '@/public/images/home/desktop/image-hero-coffeepress.jpg';
 
@@ -13,11 +13,6 @@ import Footer from "./ui/shared/footer/footer.component.jsx";
 import Button from './ui/shared/button/button.component.jsx';
 
 
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  weight: [ '300', '700'],
-  display: 'swap',
- })
 
 
 export default function Home() {

@@ -22,5 +22,5 @@
 .btnDisabled {
   background-color: var(--color-grey);
   cursor: not-allowed;
-  
+
 }

@@ -13,20 +13,15 @@ const fraunces = Fraunces({
   display: 'swap',
  })
 
-export default function orderSummary() {
-
-  const wayOfDrinking = "";
-  const typeOfBean = "";
-  const quantity = 0;
-  const frequenty = ""
+export default function orderSummary({category, beanType, quantity, grounding, frequenty}) {
 
 
   return (
     <div className={Styles.orderSummary}>
       <span className={Styles.title}>order summary</span>
       <p className={fraunces.className}>
-        &quot;I drink my coffee using <span className={Styles.orderInput}>{wayOfDrinking}</span>, with a <span className={Styles.orderInput}>{typeOfBean}</span>, type of bean.
-        <span className={Styles.orderInput}>{quantity}</span>, sent to me <span className={Styles.orderInput}>{frequenty}</span>.&quot;
+        &quot;I drink my coffee using <span className={Styles.orderInput}>{category}</span>, with a <span className={Styles.orderInput}>{beanType}</span>, type of bean.
+        <span className={Styles.orderInput}> {quantity}</span> ground ala  <span className={Styles.orderInput}>{grounding}</span>, sent to me <span className={Styles.orderInput}>{frequenty}</span>.&quot;
       </p>
     </div>
   )
